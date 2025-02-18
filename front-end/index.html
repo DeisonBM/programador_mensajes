@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Mensajes</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="main-content">
+        <div class="container">
+            <div class="header">
+                <h1>📅 Gestión de Mensajes</h1>
+                <div id="estado-conexion">⏳ Verificando conexión...</div>
+            </div>
+
+            <div class="card">
+                <h2>➕ Agregar Nuevo Mensaje</h2>
+                <form id="formularioMensaje">
+                    <input type="text" id="mensaje" placeholder="Mensaje" required>
+                    <input type="datetime-local" id="horaProgramada" required>
+                    <button type="submit">Guardar</button>
+                </form>
+            </div>
+
+            <div class="tables-container">
+                <div class="card table-card">
+                    <h2>📌 Mensajes Programados</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Mensaje</th>
+                                <th>Fecha Programada</th>
+                                <th>Acción</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tablaMensajes">
+                            
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="card table-card">
+                    <h2>📜 Mensajes Enviados</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Mensaje</th>
+                                <th>Fecha Programada</th>
+                                <th>Fecha Enviada</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tablaMensajesEnviados">
+                           
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

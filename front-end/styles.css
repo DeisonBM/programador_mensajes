@@ -1,0 +1,161 @@
+:root {
+    --glass-bg: rgba(255, 255, 255, 0.1);
+    --glass-border: rgba(255, 255, 255, 0.2);
+    --text-color: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #06f8d8, #0408f8, #06d4f8  );
+    color: var(--text-color);
+    display: flex;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#connection-status {
+    padding: 10px 20px;
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    border-radius: 8px;
+    color: var(--text-color);
+}
+
+h1, h2 {
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.tables-container {
+    display: flex;
+    gap: 20px;
+}
+
+.table-card {
+    flex: 1;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-bottom: 20px;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    background: rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid var(--glass-border);
+}
+
+th {
+    background: rgba(255, 255, 255, 0.1);
+    font-weight: 500;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+input {
+    flex: 1;
+    min-width: 200px;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    border-radius: 8px;
+    color: var(--text-color);
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+button {
+    padding: 12px 24px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid var(--glass-border);
+    border-radius: 8px;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.delete-btn {
+    background: rgba(255, 82, 82, 0.2);
+}
+
+.delete-btn:hover {
+    background: rgba(255, 82, 82, 0.4);
+}
+
+#connection-status.connected {
+    background: rgba(76, 175, 80, 0.2);
+}
+
+#connection-status.disconnected {
+    background: rgba(244, 67, 54, 0.2);
+}
+
+@media (max-width: 768px) {
+    .tables-container {
+        flex-direction: column;
+    }
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    #connection-status {
+        margin-top: 10px;
+    }
+    form {
+        flex-direction: column;
+    }
+    input, button {
+        width: 100%;
+    }
+    table {
+        display: block;
+        overflow-x: auto;
+    }
+}
