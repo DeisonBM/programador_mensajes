@@ -1,5 +1,11 @@
-# 📢 **Programador de Mensajes para Discord**
+# 🤖 **Programador de Mensajes para Discord**  🤖
 Automatización de mensajes en un servidor de **Discord**, permitiendo programar y enviar mensajes automáticamente en una fecha y hora establecida.
+---
+# 👀 **Mira lo que se puede hacer**
+
+<img src="https://github.com/user-attachments/assets/86a930fe-39b6-4998-b4b0-28889fea43f7" alt="Descripción de la imagen" width="600"/>
+
+
 
 ---
 
