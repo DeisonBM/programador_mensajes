@@ -162,8 +162,7 @@ El servidor se iniciará en `http://localhost:8080`.
 ✅ **Asegúrate de que tu bot de Discord tenga permisos para enviar mensajes en el canal.**  
 ✅ **Puedes modificar los estilos en `styles.css` para personalizar la interfaz.**  
 ✅ **Si tienes problemas con CORS, verifica la configuración en `ConfiguracionWeb.java`.**  
-✅**CORS: Si tienes problemas con CORS, verifica la configuración en ConfiguracionWeb.java en el backend.**
-✅**Live Server: Puedes utilizar Live Server para ejecutar el frontend localmente, pero asegúrate de que la API esté funcionando antes de probarlo.**
+✅ **Live Server: Puedes utilizar Live Server para ejecutar el frontend localmente, pero asegúrate de que la API esté funcionando antes de probarlo.**
 
 ## 🤝 Contribuir
 
